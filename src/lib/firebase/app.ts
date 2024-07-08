@@ -37,7 +37,7 @@ function connectToEmulator({
   functions,
   firebaseApp
 }: Firebase): Firebase {
-  connectAuthEmulator(auth, 'http://localhost:9099', { disableWarnings: true });
+  connectAuthEmulator(auth, 'https://twitter-taupe.vercel.app/', { disableWarnings: true });
   connectStorageEmulator(storage, 'localhost', 9199);
   connectFirestoreEmulator(firestore, 'localhost', 8080);
   connectFunctionsEmulator(functions, 'localhost', 5001);
